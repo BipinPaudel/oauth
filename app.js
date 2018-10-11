@@ -2,7 +2,12 @@ const express = require("express");
 const app = express();
 const authRoutes = require('./routes/auth-routes');
 const passportSetup = require('./config/passport-setup');
+const mongoose = require('mongoose');
+
+
+
 app.set("view engine","ejs");
+
 
 //create home route
 
